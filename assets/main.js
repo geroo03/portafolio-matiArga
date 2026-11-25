@@ -33,3 +33,21 @@ chips.forEach(chip => chip.addEventListener('click', () => {
   dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
   dlg.addEventListener('close', () => { body.innerHTML = ''; opener?.focus(); });
 })();
+
+// Formulario: arma el mensaje y abre WhatsApp.
+// Por ahora va al WhatsApp de MGM Studio (Martín ordena las consultas). Cambiar WA_NUM cuando Matías pase su número.
+const WA_NUM = '5493855861068';
+const WA_INTRO = 'Hola, vi el portfolio de Matías Argañaras. Consulta para Matías:';
+document.querySelectorAll('form[data-wa-form]').forEach(form => form.addEventListener('submit', e => {
+  e.preventDefault();
+  const d = new FormData(form);
+  const lines = [WA_INTRO, ''];
+  const add = (label, v) => { if (v && String(v).trim()) lines.push(`*${label}:* ${String(v).trim()}`); };
+  add('Nombre', d.get('nombre'));
+  add('WhatsApp', d.get('whatsapp'));
+  add('Negocio', d.get('negocio'));
+  add('Necesito', d.getAll('servicio').join(', '));
+  add('Cantidad', d.get('cantidad'));
+  add('Mensaje', d.get('mensaje'));
+  window.open(`https://wa.me/${WA_NUM}?text=${encodeURIComponent(lines.join('\n'))}`, '_blank', 'noopener');
+}));
