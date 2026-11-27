@@ -127,11 +127,11 @@ p{margin:0}
 .contact-in{display:grid;grid-template-columns:.9fr 1.1fr;gap:52px;align-items:start}
 .contact-copy{display:flex;flex-direction:column;gap:16px}
 .contact-copy > p:not(.kicker){color:var(--muted);font-size:17px}
-.mgm{display:flex;align-items:center;gap:14px;margin-top:10px;padding:16px;border:1px solid var(--line);border-radius:var(--r);text-decoration:none;background:#000;transition:border-color .2s}
-.mgm:hover{border-color:#8d929b}
-.mgm img{height:44px;width:auto}
-.mgm span{font-size:14px;color:var(--muted)}
-.mgm b{color:var(--fg)}
+.nexo{display:flex;align-items:center;gap:14px;margin-top:10px;padding:16px;border:1px solid var(--line);border-radius:var(--r);text-decoration:none;background:#000;transition:border-color .2s}
+.nexo:hover{border-color:#8d929b}
+.nexo img{height:44px;width:auto}
+.nexo span{font-size:14px;color:var(--muted)}
+.nexo b{color:var(--fg)}
 .form{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px;display:flex;flex-direction:column;gap:16px}
 .form label{display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:14px}
 .form input[type=text],.form input[type=tel],.form textarea{font:500 16px var(--body);padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--fg);width:100%}

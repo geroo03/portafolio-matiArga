@@ -7,4 +7,4 @@ Editor de video. Sitio estático (HTML + CSS + JS, sin build), publicado en GitH
 
 Pendiente: WhatsApp o Instagram personal de Matías, foto, reel propio de presentación.
 
-Parte de [MGM Studio](https://mgm-studio.netlify.app).
+Parte de [Nexo Studio](https://nexostudio-sde.vercel.app).
