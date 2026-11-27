@@ -35,7 +35,7 @@ chips.forEach(chip => chip.addEventListener('click', () => {
 })();
 
 // Formulario: arma el mensaje y abre WhatsApp.
-// Por ahora va al WhatsApp de MGM Studio (Martín ordena las consultas). Cambiar WA_NUM cuando Matías pase su número.
+// Por ahora va al WhatsApp de Nexo Studio (Martín ordena las consultas). Cambiar WA_NUM cuando Matías pase su número.
 const WA_NUM = '5493855861068';
 const WA_INTRO = 'Hola, vi el portfolio de Matías Argañaras. Consulta para Matías:';
 document.querySelectorAll('form[data-wa-form]').forEach(form => form.addEventListener('submit', e => {
